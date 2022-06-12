@@ -12,7 +12,7 @@ div {
     padding-left: 10px;
       }
 a:hover, a:visited, a:link, a:active {
-        text-decoration: none!important;
+        text-decoration: none;
         color:inherit;
       }
 
@@ -24,8 +24,6 @@ button {
         border: none;
         font-family:Poppins,sans-serif;
         color: #000;
-        width: 200px;
-        height: 30px;
         text-align: center;
         text-decoration: none;
         cursor: pointer;
@@ -38,6 +36,7 @@ button {
         text-align:center;
         
     }
+
 .encabezado{
     display:flex;
     left:0;
@@ -71,25 +70,13 @@ button {
     opacity: 1;
 
 }
-.span-rcorners1 {
-    border-radius: 20px;
-    background: rgb(41, 25, 1);
-    padding-left: 20px; 
-    padding-right: 20px;
-    width: 600px;
-    height: 5px;
-    color:#fff;
-    text-decoration:none;  
-      }
+
 
 .cuadrotexto{
 
     border-radius: 20px;
-    color: rgba(17,24,39,var(--tw-text-opacity));
-    --tw-border-opacity: 1;
+    color: white;
     border-color: rgba(229,231,235,var(--tw-border-opacity));
-    width: 400px;
-    height: 30px;
     text-align: center;
     font-family:Poppins,sans-serif;
     
@@ -148,4 +135,27 @@ button {
     letter-spacing:4px!important;
 }
 
+  
+@media only screen and (min-width:769px){
+    /* For desktop: */
+    .ancho-walkman {width: 30%;}
+    .ancho-1{width: 15%;}   
+    .ancho-2{width: 30%; }
+    .alto-margen-1{ height: 30px;}
+}
+@media only screen and (min-width:321px) and (max-width:768px) {
+    /* For tablets: */
+    .ancho-walkman {width: 100%!important;}
+    .ancho-1{width: 100%;}   
+    .ancho-2{width: 100%;}
+    .alto-margen-1{height: 45px;margin:2%}
 
+}
+@media only screen and (max-width:320px) {
+    /* For phone: */
+    .ancho-walkman {width: 100%!important;}
+    .ancho-1{width: 100%;}   
+    .ancho-2{width: 100%;}
+    .alto-margen-1{height: 45px;
+    }
+  }
