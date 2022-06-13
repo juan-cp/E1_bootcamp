@@ -198,3 +198,44 @@ button {
     .dropdown{display:block;}
     .encabezado{display:none;}
   }
+/**social bar**/
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998!important;
+    color: white!important;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE!important;
+    color: white!important;
+  }
+  
+  .fa-youtube {
+    background: #bb0000!important;
+    color: white!important;
+  }
+  
+  .fa-instagram {
+    background: #125688!important;
+    color: white!important;
+  }
+  
+  .fa-pinterest {
+    background: #cb2027!important;
+    color: white!important;
+  }
+  
+  
+  
