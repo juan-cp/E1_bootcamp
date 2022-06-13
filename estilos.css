@@ -175,19 +175,19 @@ button {
     .encabezado{display:flex;}
 
 }
-@media only screen and (min-width:321px) and (max-width:768px) {
+@media only screen and (min-width:401px) and (max-width:768px) {
     /* For tablets: */
-    .ancho-walkman {width: 100%!important;}
-    .ancho-1{width: 100%;}   
-    .ancho-2{width: 100%;}
-    .alto-margen-1{height: 45px;margin:2%}
-    .ancho-3{width: 80%;}
-    .alto-container{height: auto;}
+    .ancho-walkman {width: 30%;}
+    .ancho-1{width: 15%;}   
+    .ancho-2{width: 30%; }
+    .alto-margen-1{ height: 30px;}
+    .ancho-3{width: 25%;}
+    .alto-container{height: 600px;}
     .dropdown{display:block;}
     .encabezado{display:none;}
 
 }
-@media only screen and (max-width:320px) {
+@media only screen and (max-width:400px) {
     /* For phone: */
     .ancho-walkman {width: 100%!important;}
     .ancho-1{width: 100%;}   
@@ -200,42 +200,56 @@ button {
   }
 /**social bar**/
 .fa {
-    padding: 10px;
-    font-size: 30px;
-    width: 50px;
+    padding: 0;
+    font-size: 20px;
+    width: 30px;
     text-align: center;
     text-decoration: none;
-    margin: 5px 2px;
+    margin:0;
   }
   
   .fa:hover {
       opacity: 0.7;
   }
   
-  .fa-facebook {
-    background: #3B5998!important;
-    color: white!important;
+ 
+  
+/**footer-grid**/
+
+  .pie-pagina{
+    left:0;
+    top:0;
+    right:0;
+    padding:0; 
+    background-color:#ffeb3b;
+
   }
-  
-  .fa-twitter {
-    background: #55ACEE!important;
-    color: white!important;
-  }
-  
-  .fa-youtube {
-    background: #bb0000!important;
-    color: white!important;
-  }
-  
-  .fa-instagram {
-    background: #125688!important;
-    color: white!important;
-  }
-  
-  .fa-pinterest {
-    background: #cb2027!important;
-    color: white!important;
-  }
-  
-  
+  .grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 60px 1fr 1fr;
+    grid-gap: 10px;
+    grid-template-areas: "logo_f sf1 v1"
+                "sb sf1 v1"
+                "sb sf1 v1"
+                 "dis dis v1";
+                }
+    .logo_f{grid-area:logo_f; width:30vw;}
+    .sb{grid-area:sb;}
+    .sf1{grid-area:sf1;
+    display:flex;
+    width:40vw;
+    text-align: left;
+    flex-direction:row;
+    }
+    .v1{
+        width:30vw
+    }
+    .dis{grid-area:dis}
+
+  .titulo-subfooter1{
+    color: #919496!important;
+    text-transform: uppercase!important;
+}
+
   
