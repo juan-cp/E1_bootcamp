@@ -7,23 +7,35 @@
   <title>La Cassetteca</title>
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <link rel="stylesheet" href="estilos.css">
+  
 </head>
 
 <body>
 
-  <header class="encabezado">
-    <div>
+  <header class="estilo-header">
+    <div class="encabezado">
+      <div>
         <img src='logo2.png' class="logo" width="60">
-    </div>
-
-    <div>
-      <nav>
+      </div>
+      <div>
         <a href="#" class="boton-encabezado">Catálogo</a>
         <a href="#" class="boton-encabezado">¿Quiénes somos?</a>
-        <a href="#" class="boton-encabezado">Contacto</a>
         <a href="#" class="boton-encabezado">Iniciar sesión</a>
-      </nav>
+        <a href="#" class="boton-encabezado">Registrarse</a>
+      </div>
     </div>
+
+    <div class="dropdown">
+      <button class="dropbtn"><img src='logo2.png' class="logo" width="60"><span style="font-size:20px">LA CASSETTECA</span></button>
+      <div class="dropdown-content">
+          <a href="#">Catálogo</a>
+          <a href="#">¿Quiénes somos?</a>
+          <a href="#">Iniciar sesión</a>
+          <a href="#">Registrarse</a>
+    </div>
+
+   
+    
   </header>
 
   <main>
@@ -42,7 +54,7 @@
         <form>
           <label for="email"></label>
           <input id="email" type="email" class="cuadrotexto ancho-2 alto-margen-1" placeholder="Ingresa tu correo" >
-          <button type="submit" class="ancho-1 alto-margen-1">Enviar</button>
+          <button type="submit" class="ancho-1 alto-margen-1">Suscribirse</button>
           <p>
           <a href="#" style="color:white;">Conoce nuestros términos y condiciones.</a></p>
         </form>
@@ -61,9 +73,9 @@
     <div class="titulo-cassettes">
       Update Casseteca
     </div>
-    <div class="container">
+    <div class="container alto-container">
 
-      <div class="caja">
+      <div class="caja ancho-3">
         <img src="losprisioneros.jpeg" width="100%" class="opacidad-img">
         <div class="texto-cassette">
           <p><b>Los Prisioneros - La Voz de los 80s</b></p>
@@ -72,7 +84,7 @@
           
         </div>
       </div>
-      <div class="caja">
+      <div class="caja ancho-3">
         <img src="aparatoraro.jpeg" width="100%" class="opacidad-img">
         <div class="texto-cassette">
           <p><b>Aparato Raro - Homónimo</b></p>
@@ -80,7 +92,7 @@
           Aparato Raro es una banda chilena de música synth pop y new wave formada en Santiago en 1982 por Juan Ricardo Weiler, Igor Rodríguez, Rodrigo "Coti" Aboitiz, y Boris Sazunic. La banda nació primero como un grupo de jazz-fusión; se llamaba Ojo de Horus, y era liderada por el baterista Juan Ricardo Weiler. Su relativa popularidad se debe a la canción "Calibraciones" la cual fue un gran éxito debido a su cercanía al underground, cultura que estaba volviéndose una moda en esa época.
         </div>
       </div>
-      <div class="caja">
+      <div class="caja ancho-3">
         <img src="viena.jpeg" width="100%" class="opacidad-img">
         <div class="texto-cassette">
           <p><b>Viena - Homónimo</b></p>
