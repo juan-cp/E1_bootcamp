@@ -162,7 +162,56 @@ button {
   .dropdown-content a:hover {background-color: #ddd;}
   .dropdown:hover .dropdown-content {display: block;}
   .dropdown:hover .dropbtn {background-color: #ffeb3b;}
+  .pie-pagina{
+    left:0;
+    top:0;
+    right:0;
+    padding:0; 
+    background-color:#ffeb3b;
 
+  }
+  .titulo-subfooter1{
+    color: #919496!important;
+    text-transform: uppercase!important;
+}
+.seccion_central{
+    display:flex;
+    justify-content: center;
+    padding-top:64px;
+    padding-bottom:64px;
+    background-image: url("fondo1.jpg");
+}
+
+.seccion_formulario{
+    flex-direction: column;
+    
+}
+.titulo_formulario_registro{
+    color:white;
+}
+.formulario{
+    display:grid;
+    align-items: center;
+
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "f_nombre"
+    "f_apellido"
+    "f_email";
+   background-color: white!important;
+    margin:20; 
+    box-shadow:rgba(0, 0, 0, 0.3) 0px 0px 8px;
+    border-radius: 10px 10px 10px 10px;
+    align-items:center;
+    }
+.f_nombre{grid-area:f_nombre;}
+.f_apellido{grid-area:f_apellido;}
+.f_email{grid-area:f_email;}
+.ancho-4{
+    width:100%
+}
+.ancho-5{
+    width:80%
+}
 @media only screen and (min-width:769px){
     /* For desktop: */
     .ancho-walkman {width: 30%;}
@@ -195,6 +244,7 @@ button {
             width:30vw
         }
         .dis{grid-area:dis}
+        .seccion_formulario{width:40%}
 
 }
 @media only screen and (min-width:401px) and (max-width:768px) {
@@ -210,7 +260,7 @@ button {
     .grid-footer {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 60px 60px 1fr 1fr 1fr 1fr;
+        grid-template-rows: 60px 60px 1fr 1fr;
         grid-gap: 10px;
         grid-template-areas: "logo_f"
                     "sb"
@@ -224,6 +274,7 @@ button {
         flex-direction:column;
         }
         .dis{grid-area:dis}
+        .seccion_formulario{width:40%}
 }
 @media only screen and (max-width:400px) {
     /* For phone: */
@@ -238,7 +289,7 @@ button {
     .grid-footer {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 60px 60px 1fr 1fr 1fr 1fr;
+        grid-template-rows: 60px 60px 1fr 1fr;
         grid-gap: 10px;
         grid-template-areas: "logo_f"
                     "sb"
@@ -252,6 +303,7 @@ button {
         flex-direction:column;
         }
         .dis{grid-area:dis}
+        .seccion_formulario{width:80%}
   }
 /**social bar**/
 .fa {
@@ -262,28 +314,8 @@ button {
     text-decoration: none;
     margin:0;
   }
-  
   .fa:hover {
       opacity: 0.7;
   }
-  
- 
-  
-/**footer-grid**/
 
-  .pie-pagina{
-    left:0;
-    top:0;
-    right:0;
-    padding:0; 
-    background-color:#ffeb3b;
 
-  }
- 
-
-  .titulo-subfooter1{
-    color: #919496!important;
-    text-transform: uppercase!important;
-}
-
-  
