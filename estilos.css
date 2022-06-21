@@ -10,32 +10,32 @@ div {
     padding-right: 10px;
     padding-bottom: 5px;
     padding-left: 10px;
-      }
+}
 a:hover, a:visited, a:link, a:active {
-        text-decoration: none;
-        color:inherit;
-      }
+    text-decoration: none;
+    color:inherit;
+}
 
 h1 {
-        font-size: 40px;
-      }
+    font-size: 40px;
+}
 button {
-        background-color: #ffeb3b;
-        border: none;
-        font-family:Poppins,sans-serif;
-        color: #000;
-        text-align: center;
-        text-decoration: none;
-        cursor: pointer;
-      }
+    background-color: #ffeb3b;
+    border: none;
+    font-family:Poppins,sans-serif;
+    color: #000;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+}
 .logo{
-        padding:8px 16px;
-        vertical-align:middle;
-        color:#000;
-        text-decoration:none;
-        text-align:center;
+    padding:8px 16px;
+    vertical-align:middle;
+    color:#000;
+    text-decoration:none;
+    text-align:center;
         
-    }
+}
 .estilo-header{
     left:0;
     top:0;
@@ -76,17 +76,17 @@ button {
     opacity: 1;
 
 }
-
+.formulario-jumbotron{
+    padding:0!important;
+}
 
 .cuadrotexto{
-
     border-radius: 20px;
-    color: white;
+    color: gray;
     border-color: rgba(229,231,235,var(--tw-border-opacity));
     text-align: center;
     font-family:Poppins,sans-serif;
-    
-    }
+}
 .blog{
     text-align:center;
     padding-top:64px;
@@ -103,7 +103,6 @@ button {
     color:#fff;
     padding-left:10px;
     font-size: 40px;
-
 }
 .container {
     display: flex;
@@ -114,8 +113,8 @@ button {
     margin:0;
     height: auto;
     
-  }
-  .caja{
+}
+.caja{
     padding: 30px;
     height: 80%;
     position: relative;    
@@ -126,7 +125,6 @@ button {
     height:200px;
     text-overflow: ellipsis;
     overflow: hidden;
-    
 }
 .adicional{
     text-align:center!important;
@@ -141,36 +139,36 @@ button {
 }
 .dropdown {
     position: relative;
-  }
-  .dropbtn {
+}
+.dropbtn {
     width:60;
-  }
-  .dropdown-content {
+}
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
-  .dropdown-content a {
+}
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  .dropdown-content a:hover {background-color: #ddd;}
-  .dropdown:hover .dropdown-content {display: block;}
-  .dropdown:hover .dropbtn {background-color: #ffeb3b;}
-  .pie-pagina{
+}
+.dropdown-content a:hover {background-color: #ddd;}
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropbtn {background-color: #ffeb3b;}
+.pie-pagina{
     left:0;
     top:0;
     right:0;
     padding:0; 
     background-color:#ffeb3b;
 
-  }
-  .titulo-subfooter1{
+}
+.titulo-subfooter1{
     color: #919496!important;
     text-transform: uppercase!important;
 }
@@ -181,31 +179,37 @@ button {
     padding-bottom:64px;
     background-image: url("fondo1.jpg");
 }
-
 .seccion_formulario{
-    flex-direction: column;
-    
+    flex-direction: column; 
 }
 .titulo_formulario_registro{
     color:white;
 }
 .formulario{
     display:grid;
-    align-items: center;
-
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "f_nombre"
     "f_apellido"
-    "f_email";
-   background-color: white!important;
+    "f_email"
+    "f_boton";
+    background-color: white!important;
     margin:20; 
     box-shadow:rgba(0, 0, 0, 0.3) 0px 0px 8px;
     border-radius: 10px 10px 10px 10px;
     align-items:center;
-    }
-.f_nombre{grid-area:f_nombre;}
-.f_apellido{grid-area:f_apellido;}
-.f_email{grid-area:f_email;}
+}
+.f_nombre{
+    grid-area:f_nombre;
+}
+.f_apellido{
+    grid-area:f_apellido;
+}
+.f_email{
+    grid-area:f_email;
+}
+.f-boton{
+    grid-area:f_boton;
+}
 .ancho-4{
     width:100%
 }
@@ -219,7 +223,7 @@ button {
     .ancho-2{width: 30%; }
     .alto-margen-1{ height: 30px;}
     .ancho-3{width: 25%;}
-    .alto-container{height: 600px;}
+    .alto-container{height: 700px;}
     .dropdown{display:none;}
     .encabezado{display:flex;}
     .grid-footer {
@@ -231,20 +235,22 @@ button {
                     "sb sf1 v1"
                     "sb sf1 v1"
                      "dis dis v1";
-                    }
-        .logo_f{grid-area:logo_f; width:30vw;}
-        .sb{grid-area:sb;}
-        .sf1{grid-area:sf1;
+                    
+    }
+    .logo_f{grid-area:logo_f; width:30vw;}
+    .sb{grid-area:sb;}
+    .sf1{
+        grid-area:sf1;
         display:flex;
         width:40vw;
         text-align: left;
         flex-direction:row;
-        }
-        .v1{
-            width:30vw
-        }
-        .dis{grid-area:dis}
-        .seccion_formulario{width:40%}
+    }
+    .v1{
+        width:30vw
+    }
+    .dis{grid-area:dis}
+    .seccion_formulario{width:40%}
 
 }
 @media only screen and (min-width:401px) and (max-width:768px) {
@@ -254,7 +260,7 @@ button {
     .ancho-2{width: 30%; }
     .alto-margen-1{ height: 30px;}
     .ancho-3{width: 25%;}
-    .alto-container{height: 600px;}
+    .alto-container{height: 700px;}
     .dropdown{display:block;}
     .encabezado{display:none;}
     .grid-footer {
@@ -266,15 +272,16 @@ button {
                     "sb"
                     "sf1"
                      "dis";
-                    }
-        .logo_f{grid-area:logo_f;}
-        .sb{grid-area:sb;}
-        .sf1{grid-area:sf1;
+    }
+    .logo_f{grid-area:logo_f;}
+    .sb{grid-area:sb;}
+    .sf1{
+        grid-area:sf1;
         display:flex;
         flex-direction:column;
-        }
-        .dis{grid-area:dis}
-        .seccion_formulario{width:40%}
+    }
+    .dis{grid-area:dis}
+    .seccion_formulario{width:40%}
 }
 @media only screen and (max-width:400px) {
     /* For phone: */
@@ -295,15 +302,16 @@ button {
                     "sb"
                     "sf1"
                      "dis";
-                    }
-        .logo_f{grid-area:logo_f;}
-        .sb{grid-area:sb;}
-        .sf1{grid-area:sf1;
+    }
+    .logo_f{grid-area:logo_f;}
+    .sb{grid-area:sb;}
+    .sf1{
+        grid-area:sf1;
         display:flex;
         flex-direction:column;
-        }
-        .dis{grid-area:dis}
-        .seccion_formulario{width:80%}
+    }
+    .dis{grid-area:dis}
+    .seccion_formulario{width:80%}
   }
 /**social bar**/
 .fa {
@@ -313,9 +321,9 @@ button {
     text-align: center;
     text-decoration: none;
     margin:0;
-  }
-  .fa:hover {
-      opacity: 0.7;
-  }
+}
+.fa:hover {
+    opacity: 0.7;
+}
 
 
