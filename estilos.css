@@ -125,6 +125,7 @@ button {
 .caja{
     padding: 30px;
     height: 80%;
+    max-width: 300px;
     position: relative; 
 }
 .opacidad-img:hover{opacity:0.60}
