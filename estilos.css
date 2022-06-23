@@ -54,6 +54,10 @@ button {
     align-items: center;
     min-height: 54px;
 }
+.encabezado-mobile{
+    
+    align-items: center;
+}
 .boton-encabezado{
     border:none;
     padding:8px 16px;
@@ -74,10 +78,14 @@ button {
     padding-bottom:64px;
     background-image: url("fondo1.jpg");
     opacity: 1;
+ 
 
 }
 .formulario-jumbotron{
+ 
     padding:0!important;
+    display:flex!important;
+ 
 }
 
 .cuadrotexto{
@@ -117,7 +125,7 @@ button {
 .caja{
     padding: 30px;
     height: 80%;
-    position: relative;    
+    position: relative; 
 }
 .opacidad-img:hover{opacity:0.60}
 .texto-cassette{
@@ -219,12 +227,14 @@ button {
 @media only screen and (min-width:769px){
     /* For desktop: */
     .ancho-walkman {width: 30%;}
-    .ancho-1{width: 15%;}   
-    .ancho-2{width: 30%; }
+    .ancho-1{width: 300px;}   
+    .ancho-2{width: 400px; }
+    .formulario-jumbotron{flex-direction:row;}
     .alto-margen-1{ height: 30px;}
     .ancho-3{width: 25%;}
     .alto-container{height: 700px;}
     .dropdown{display:none;}
+    .encabezado-mobile{display:none;}
     .encabezado{display:flex;}
     .grid-footer {
         display: grid;
@@ -256,12 +266,14 @@ button {
 @media only screen and (min-width:401px) and (max-width:768px) {
     /* For tablets: */
     .ancho-walkman {width: 30%;}
-    .ancho-1{width: 15%;}   
-    .ancho-2{width: 30%; }
+    .ancho-1{width: 300px;}   
+    .ancho-2{width: 400px; }
+    .formulario-jumbotron{flex-direction:column;}
     .alto-margen-1{ height: 30px;}
     .ancho-3{width: 25%;}
     .alto-container{height: 700px;}
     .dropdown{display:block;}
+    .encabezado-mobile{display:flex;}
     .encabezado{display:none;}
     .grid-footer {
         display: grid;
@@ -288,10 +300,12 @@ button {
     .ancho-walkman {width: 100%!important;}
     .ancho-1{width: 100%;}   
     .ancho-2{width: 100%;}
+    .formulario-jumbotron{flex-direction:column;}
     .alto-margen-1{height: 45px;}
     .ancho-3{width: 80%;}
     .alto-container{height: auto;}
     .dropdown{display:block;}
+    .encabezado-mobile{display:flex;}
     .encabezado{display:none;}
     .grid-footer {
         display: grid;
